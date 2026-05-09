@@ -17,7 +17,7 @@
 
     <header class="max-w-4xl mx-auto text-center mb-16">
         <h1 class="text-4xl font-extrabold text-slate-900 mb-4">🏥 危機診斷實驗室</h1>
-        <p class="text-xl text-slate-500 italic font-light">案例固定 ➔ 理論導讀 ➔ 邏輯診斷</p>
+        <p class="text-xl text-slate-500 italic font-light">發言人專業臨床診斷系統</p>
         <div class="mt-6 h-1 w-24 bg-blue-600 mx-auto rounded-full"></div>
     </header>
 
@@ -25,98 +25,89 @@
 
         <section>
             <h2 class="text-2xl font-bold mb-8 flex items-center italic">📁 第一步：選擇臨床病案</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <button onclick="selectCase('case1')" id="btn-case1" class="p-6 bg-white border-2 border-slate-200 rounded-3xl text-left hover:shadow-lg transition-all">
-                    <h3 class="font-bold text-blue-900 mb-2">病案 101：餐飲食安衝擊</h3>
-                    <p class="text-sm text-slate-500">Threads 瘋傳餐點內有大型蟑螂影片，輿論迅速升溫。</p>
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <button onclick="selectCase('case1')" id="btn-case1" class="p-8 bg-white border-2 border-slate-200 rounded-[2rem] hover:shadow-xl transition-all">
+                    <h3 class="font-bold text-blue-900 text-lg mb-2">病案 101</h3>
+                    <p class="text-sm text-slate-500 italic">餐飲連鎖食安危機</p>
                 </button>
-                <button onclick="selectCase('case2')" id="btn-case2" class="p-6 bg-white border-2 border-slate-200 rounded-3xl text-left hover:shadow-lg transition-all">
-                    <h3 class="font-bold text-red-900 mb-2">病案 102：公衛議題極化</h3>
-                    <p class="text-sm text-slate-500">「見鼠地圖」引發行政怠惰指責，演算法加劇同溫層對立。</p>
+                <button onclick="selectCase('case2')" id="btn-case2" class="p-8 bg-white border-2 border-slate-200 rounded-[2rem] hover:shadow-xl transition-all">
+                    <h3 class="font-bold text-red-900 text-lg mb-2">病案 102</h3>
+                    <p class="text-sm text-slate-500 italic">公衛議題政治極化</p>
                 </button>
-                <button onclick="selectCase('case3')" id="btn-case3" class="p-6 bg-white border-2 border-slate-200 rounded-3xl text-left hover:shadow-lg transition-all">
-                    <h3 class="font-bold text-slate-700 mb-2">病案 103：資安與管理失靈</h3>
-                    <p class="text-sm text-slate-500">系統崩潰且內部隱匿，直到駭客勒索曝光才被迫面對。</p>
+                <button onclick="selectCase('case3')" id="btn-case3" class="p-8 bg-white border-2 border-slate-200 rounded-[2rem] hover:shadow-xl transition-all">
+                    <h3 class="font-bold text-slate-700 text-lg mb-2">病案 103</h3>
+                    <p class="text-sm text-slate-500 italic">資安疏失與內部隱匿</p>
                 </button>
             </div>
         </section>
 
-        <section id="theory-section" class="diag-step bg-white rounded-[3rem] p-10 shadow-xl border border-slate-100">
-            <h2 class="text-2xl font-bold mb-8 text-blue-900">📖 第二步：發言人理論指引</h2>
-            
+        <section id="theory-section" class="diag-step bg-white rounded-[3rem] p-12 shadow-2xl border border-slate-100">
+            <h2 class="text-2xl font-bold mb-10 text-slate-900 border-l-8 border-blue-600 pl-6">📖 發言人專業指引庫</h2>
             <div class="grid md:grid-cols-2 gap-12">
                 <div>
-                    <h3 class="font-bold text-xl mb-6 text-blue-700 border-b pb-2">🕒 危機三階段</h3>
+                    <h3 class="font-bold text-xl mb-6 text-blue-700">🕒 危機生命週期</h3>
                     <div class="space-y-4">
-                        <details class="bg-blue-50 p-4 rounded-2xl"><summary class="font-bold cursor-pointer text-blue-900">危機前：預防與偵測</summary><p class="mt-3 text-sm leading-loose text-blue-800">不要等危機發生才開始想怎麼說話。重點在於風險辨識、建立危機小組、訊息模板演練與社群偵測。重點是「預防、偵測、準備」。</p></details>
-                        <details class="bg-blue-50 p-4 rounded-2xl"><summary class="font-bold cursor-pointer text-blue-900">危機中：回應與控制</summary><p class="mt-3 text-sm leading-loose text-blue-800">這是最關鍵階段。核心是「先穩住傷害，再爭取信任」。發言人需快速回應、表達同理心、說明事實、承擔應負責任並提出具體行動。</p></details>
-                        <details class="bg-blue-50 p-4 rounded-2xl"><summary class="font-bold cursor-pointer text-blue-900">危機後：修復與學習</summary><p class="mt-3 text-sm leading-loose text-blue-800">不只是把火撲滅。核心是持續追蹤受影響者、公布調查、制度改革防止再犯、並長期進行形象修復。重點是「補救、檢討、重建信任」。</p></details>
+                        <details class="bg-blue-50 p-5 rounded-2xl"><summary class="font-bold cursor-pointer text-blue-900">危機前：預防與偵測</summary><p class="mt-3 text-sm leading-relaxed">重點在於「風險辨識」。不要等火燒起來才想怎麼滅火。核心是預防、偵測、準備。</p></details>
+                        <details class="bg-blue-50 p-5 rounded-2xl"><summary class="font-bold cursor-pointer text-blue-900">危機中：回應與控制</summary><p class="mt-3 text-sm leading-relaxed">最關鍵時刻。核心是「先穩住傷害，再爭取信任」。需快速回應、同理、負責且展現具體行動。</p></details>
+                        <details class="bg-blue-50 p-5 rounded-2xl"><summary class="font-bold cursor-pointer text-blue-900">危機後：修復與學習</summary><p class="mt-3 text-sm leading-relaxed">核心是「重建信任」。需公布調查、進行制度改革並防止再犯。</p></details>
                     </div>
                 </div>
-
                 <div>
-                    <h3 class="font-bold text-xl mb-6 text-purple-700 border-b pb-2">🔪 形象修護五大策略</h3>
+                    <h3 class="font-bold text-xl mb-6 text-purple-700">🔪 修辭手術刀策略</h3>
                     <div class="space-y-3">
-                        <details class="bg-purple-50 p-3 rounded-xl"><summary class="font-bold cursor-pointer text-purple-900">1. 否認 (Denial)</summary><p class="mt-2 text-xs leading-relaxed text-purple-800">切斷與錯誤的關係。包含直接否認或轉移責任。僅限證據極明確時使用。</p></details>
-                        <details class="bg-purple-50 p-3 rounded-xl"><summary class="font-bold cursor-pointer text-purple-900">2. 逃避責任 (Evading)</summary><p class="mt-2 text-xs leading-relaxed text-purple-800">並非完全否認，而是降低責任程度。如：被挑釁、意外、資訊不足或善意動機。</p></details>
-                        <details class="bg-purple-50 p-3 rounded-xl"><summary class="font-bold cursor-pointer text-purple-900">3. 降低冒犯性 (Reducing)</summary><p class="mt-2 text-xs leading-relaxed text-purple-800">改變大眾對事件嚴重性的判斷。如：強化優點、最小化、補償、區分、超越或攻擊指控者。</p></details>
-                        <details class="bg-purple-50 p-3 rounded-xl"><summary class="font-bold cursor-pointer text-purple-900">4. 修正行動 (Corrective)</summary><p class="mt-2 text-xs leading-relaxed text-purple-800">處理「未來還會不會發生」的問題。停止錯誤、改善制度、防止再犯。</p></details>
-                        <details class="bg-purple-50 p-3 rounded-xl"><summary class="font-bold cursor-pointer text-purple-900">5. 道歉 (Mortification)</summary><p class="mt-2 text-xs leading-relaxed text-purple-800">承認錯誤。處理的是「道德責任」與「情感傷害」。若責任明確卻不道歉，風險極大。</p></details>
+                        <details class="bg-purple-50 p-4 rounded-xl"><summary class="font-bold cursor-pointer text-purple-900">否認與逃避</summary><p class="mt-2 text-xs leading-relaxed italic">切斷責任聯繫。風險極高，僅限證據完全有利時使用。</p></details>
+                        <details class="bg-purple-50 p-4 rounded-xl"><summary class="font-bold cursor-pointer text-purple-900">降低冒犯性</summary><p class="mt-2 text-xs leading-relaxed italic">改變大眾對嚴重性的判斷。如：強化優點、補償、超越價值。</p></details>
+                        <details class="bg-purple-50 p-4 rounded-xl"><summary class="font-bold cursor-pointer text-purple-900">修正行動與道歉</summary><p class="mt-2 text-xs leading-relaxed italic">處理未來再犯問題與道德責任。責任明確時的黃金選擇。</p></details>
                     </div>
                 </div>
             </div>
-            <button onclick="unlockDiagnosis()" class="mt-10 w-full bg-blue-600 text-white font-bold py-4 rounded-2xl hover:bg-blue-700 shadow-lg transition-all">我已精讀以上深度理論，開始診斷</button>
+            <button onclick="unlockDiagnosis()" class="mt-12 w-full bg-slate-900 text-white font-bold py-5 rounded-2xl hover:bg-black transition-all">我已精讀專業指引，開始產出診斷報告</button>
         </section>
 
-        <section id="diag-section" class="diag-step space-y-8">
-            <h2 class="text-2xl font-bold mb-8">🩺 第三步：邏輯串接診斷處方</h2>
-            
-            <div class="grid md:grid-cols-3 gap-6 text-center">
-                <div class="p-6 bg-white rounded-3xl border shadow-sm">
-                    <label class="block font-bold text-blue-600 mb-4 italic">一、時效階段</label>
-                    <select id="sel-stage" class="w-full p-3 bg-slate-50 border rounded-xl" onchange="checkLogic()">
-                        <option value="">請定位...</option>
-                        <option value="before">危機前：預防偵測</option>
-                        <option value="during">危機中：回應控制</option>
-                        <option value="after">危機後：修復學習</option>
+        <section id="diag-section" class="diag-step space-y-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                    <label class="font-bold text-slate-500 tracking-widest uppercase text-xs">Step 1. 時效定位</label>
+                    <select id="sel-stage" class="w-full p-4 bg-white border-2 rounded-2xl shadow-sm focus:border-blue-500 outline-none transition-all" onchange="checkLogic()">
+                        <option value="">選擇危機階段...</option>
+                        <option value="before">危機前 (Before)</option>
+                        <option value="during">危機中 (During)</option>
+                        <option value="after">危機後 (After)</option>
                     </select>
                 </div>
-                <div class="p-6 bg-white rounded-3xl border shadow-sm">
-                    <label class="block font-bold text-green-600 mb-4 italic">二、責任歸因</label>
-                    <select id="sel-resp" class="w-full p-3 bg-slate-50 border rounded-xl" onchange="checkLogic()">
-                        <option value="">請判斷...</option>
-                        <option value="victim">受害者 (組織也受害)</option>
-                        <option value="accident">意外 (不可抗力)</option>
-                        <option value="preventable">可預防 (人為疏失)</option>
+                <div class="space-y-4">
+                    <label class="font-bold text-slate-500 tracking-widest uppercase text-xs">Step 2. 情境歸因</label>
+                    <select id="sel-resp" class="w-full p-4 bg-white border-2 rounded-2xl shadow-sm focus:border-blue-500 outline-none transition-all" onchange="checkLogic()">
+                        <option value="">選擇責任情境...</option>
+                        <option value="victim">受害者情境</option>
+                        <option value="accident">意外失誤情境</option>
+                        <option value="preventable">可預防的人為疏失</option>
                     </select>
                 </div>
-                <div class="p-6 bg-white rounded-3xl border shadow-sm">
-                    <label class="block font-bold text-purple-600 mb-4 italic">三、修辭策略</label>
-                    <select id="sel-strat" class="w-full p-3 bg-slate-50 border rounded-xl" onchange="checkLogic()">
-                        <option value="">請開處方...</option>
-                        <option value="denial">否認 (Denial)</option>
-                        <option value="evade">逃避責任 (Evading)</option>
-                        <option value="reduce">降低冒犯性 (Reducing)</option>
-                        <option value="correct">修正行動 (Corrective)</option>
-                        <option value="apology">正式道歉 (Mortification)</option>
+                <div class="space-y-4">
+                    <label class="font-bold text-slate-500 tracking-widest uppercase text-xs">Step 3. 修辭處方</label>
+                    <select id="sel-strat" class="w-full p-4 bg-white border-2 rounded-2xl shadow-sm focus:border-blue-500 outline-none transition-all" onchange="checkLogic()">
+                        <option value="">選擇修辭手法...</option>
+                        <option value="denial">否認策略</option>
+                        <option value="evade">逃避責任</option>
+                        <option value="reduce">降低冒犯性</option>
+                        <option value="correct">修正行動</option>
+                        <option value="apology">正式道歉</option>
                     </select>
                 </div>
             </div>
 
-            <div id="diag-report" class="hidden animate-in fade-in zoom-in duration-500">
-                <div id="report-box" class="p-10 rounded-[3rem] shadow-2xl text-white">
-                    <h3 class="text-3xl font-bold mb-8 border-b border-white/20 pb-4">發言人臨床報告書</h3>
-                    <div id="report-text" class="space-y-6 text-lg"></div>
-                    <button onclick="location.reload()" class="mt-12 text-sm opacity-50 hover:opacity-100 underline">接手下一個病例</button>
+            <div id="diag-report" class="hidden">
+                <div id="report-box" class="p-12 rounded-[3rem] shadow-2xl transition-all duration-500 border-t-[20px]">
+                    <h3 class="text-3xl font-black mb-8 border-b border-white/20 pb-6 tracking-tighter">發言人臨床診斷報告書</h3>
+                    <div id="report-text" class="grid md:grid-cols-2 gap-10"></div>
+                    <div class="mt-12 pt-8 border-t border-white/10 text-center">
+                        <button onclick="location.reload()" class="text-sm font-bold opacity-60 hover:opacity-100 tracking-widest">RESET / 接手下一宗病例</button>
+                    </div>
                 </div>
             </div>
         </section>
-
     </main>
-
-    <footer class="mt-24 py-12 text-center text-slate-400 text-xs tracking-widest">
-        PROFESSOR'S CRISIS LAB ｜ LOGIC-FIRST PERSONALIZATION
-    </footer>
 
     <script>
         function selectCase(id) {
@@ -142,41 +133,51 @@
                 const text = document.getElementById('report-text');
                 report.classList.remove('hidden');
 
-                // 送急救邏輯 (重大衝突)
-                if (stage === 'during' && resp === 'preventable' && (strat === 'denial' || strat === 'evade')) {
-                    box.className = "p-10 rounded-[3rem] shadow-2xl bg-red-900 border-8 border-red-500 text-red-50 animate-pulse";
-                    text.innerHTML = `
-                        <div class="text-4xl font-black mb-6">🚨 宣告命危：立即送往急救室！</div>
-                        <p class="mb-4">你正在進行一場災難性的溝通。在「危機爆發期」且事實明顯為「人為疏失」時，你選擇了「否認或逃避」。</p>
-                        <ul class="list-disc ml-8 space-y-2 text-red-200">
-                            <li>公眾已掌握事實，你的否認將被視為說謊。</li>
-                            <li>未處理責任歸因，將導致憤怒值二次爆炸。</li>
-                            <li><strong>教授診斷：</strong> 此發言邏輯已死，組織聲譽宣告不治。</li>
-                        </ul>
-                    `;
-                } 
-                // 專業稱許邏輯 (完美串接)
-                else if (stage === 'during' && resp === 'preventable' && (strat === 'correct' || strat === 'apology')) {
-                    box.className = "p-10 rounded-[3rem] shadow-2xl bg-emerald-900 border-8 border-emerald-500 text-emerald-50";
-                    text.innerHTML = `
-                        <div class="text-4xl font-black mb-6">🌟 專業稱許：精準的臨床手術！</div>
-                        <p class="mb-4">面對高度責任的危機，你展現了發言人應有的擔當與邏輯。</p>
-                        <ul class="list-disc ml-8 space-y-2 text-emerald-200">
-                            <li>成功把握「危機中」的時效，快速定位人為責任。</li>
-                            <li>選擇「修正行動」有效回應了大眾對「未來還會不會發生」的疑慮。</li>
-                            <li><strong>教授診斷：</strong> 邏輯環環相扣，這是一次成功的信任重建。</li>
-                        </ul>
-                    `;
+                let statusTitle = "";
+                let clinicalAnalysis = "";
+                let suggestion = "";
+                let warning = "";
+
+                // 核心邏輯判斷
+                const isCriticalError = (stage === 'during' && resp === 'preventable' && (strat === 'denial' || strat === 'evade'));
+                const isOptimal = (stage === 'during' && resp === 'preventable' && (strat === 'correct' || strat === 'apology'));
+
+                if (isCriticalError) {
+                    box.className = "p-12 rounded-[3rem] shadow-2xl bg-red-950 border-red-600 text-red-100 border-t-[20px]";
+                    statusTitle = "🚨 宣告命危：立即進入急救程序";
+                    clinicalAnalysis = `目前處於「${document.getElementById('sel-stage').selectedOptions[0].text}」，大眾判定為「人為疏失」。這是一場信任崩解的高危險情境。`;
+                    suggestion = "你選擇了「否認/逃避」。在證據明確的社群時代，這等同於對大眾撒謊，完全切斷了溝通的可能性。";
+                    warning = "<strong>嚴重後果：</strong> 輿論將發生二次爆炸，大眾會發起抵制運動。若不立即撤回處方並轉向「修正行動」，組織聲譽將永久性壞死。";
+                } else if (isOptimal) {
+                    box.className = "p-12 rounded-[3rem] shadow-2xl bg-emerald-950 border-emerald-600 text-emerald-100 border-t-[20px]";
+                    statusTitle = "🌟 專業稱許：手術精準，預後良好";
+                    clinicalAnalysis = `當前為「${document.getElementById('sel-stage').selectedOptions[0].text}」，面對「人為疏失」，你準確辨識出發言人已無閃躲空間。`;
+                    suggestion = `建議採取「${document.getElementById('sel-strat').selectedOptions[0].text}」。這符合「處理未來再犯問題」的深層修辭，能有效轉換憤怒。`;
+                    warning = "<strong>後續建議：</strong> 請持續追蹤受影響者，並公開調查進度。目前的決策已成功保住品牌核心價值。";
+                } else {
+                    box.className = "p-12 rounded-[3rem] shadow-2xl bg-slate-900 border-blue-600 text-white border-t-[20px]";
+                    statusTitle = "🩺 臨床診斷：病勢穩定，留院觀察";
+                    clinicalAnalysis = `目前定位在「${document.getElementById('sel-stage').selectedOptions[0].text}」，歸因為「${document.getElementById('sel-resp').selectedOptions[0].text}」。`;
+                    suggestion = `你選擇了「${document.getElementById('sel-strat').selectedOptions[0].text}」。這是一個中規中矩的策略。`;
+                    warning = "<strong>注意：</strong> 雖然暫時無生命危險，但若後續行動跟不上修辭，仍可能轉為慢性危機。建議盤點具體補償措施。";
                 }
-                // 留院觀察 (一般選擇)
-                else {
-                    box.className = "p-10 rounded-[3rem] shadow-2xl bg-slate-900 border-8 border-blue-500 text-blue-50";
-                    text.innerHTML = `
-                        <div class="text-4xl font-black mb-6">🩺 診斷完成：病勢平穩，留院觀察。</div>
-                        <p class="mb-4">你的處方尚能穩定局勢，但仍有優化空間。</p>
-                        <p class="text-slate-400">請反思：在當前的階段下，這套修辭是否能真正處理公眾對責任的歸因？</p>
-                    `;
-                }
+
+                text.innerHTML = `
+                    <div class="space-y-6">
+                        <div class="text-4xl font-black mb-4">${statusTitle}</div>
+                        <div class="bg-white/10 p-6 rounded-2xl">
+                            <h4 class="font-bold text-sm uppercase tracking-widest mb-2 opacity-50">一、臨床現狀與情境分析</h4>
+                            <p>${clinicalAnalysis}</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-white/10 p-6 rounded-2xl">
+                            <h4 class="font-bold text-sm uppercase tracking-widest mb-2 opacity-50">二、修辭手法與預後</h4>
+                            <p class="mb-4">${suggestion}</p>
+                            <p class="p-4 bg-black/30 rounded-xl text-yellow-200 border-l-4 border-yellow-500">${warning}</p>
+                        </div>
+                    </div>
+                `;
                 window.scrollTo({ top: report.offsetTop - 50, behavior: 'smooth' });
             }
         }
