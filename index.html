@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>危機診斷室 - 口傳發言人的學習小天地</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-100 p-6 md:p-12">
+
+    <!-- Header -->
+    <header class="max-w-5xl mx-auto text-center mb-12">
+        <h1 class="text-4xl font-extrabold text-slate-900 mb-4">🏥 危機診斷室</h1>
+        <p class="text-xl text-slate-600 italic">口傳發言人的學習小天地</p>
+        <div class="mt-6 h-1 w-24 bg-blue-600 mx-auto"></div>
+    </header>
+
+    <!-- 三大理論儀器區 -->
+    <section class="max-w-5xl mx-auto mb-16">
+        <h2 class="text-2xl font-bold mb-8 flex items-center text-slate-800">🔬 核心診斷儀器</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- 理論 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow relative">
+                <div class="text-4xl mb-4">🕒</div>
+                <h3 class="font-bold text-lg mb-2">時效檢測儀：三階段模型</h3>
+                <p class="text-gray-500 text-sm mb-4">定位危機發展階段：預警期、爆發期、恢復期。</p>
+                <button onclick="copyAPA('Coombs, W. T. (2019). Ongoing crisis communication: Planning, managing, and responding (5th ed.). Sage Publications.')" class="text-xs text-blue-600 hover:underline">📄 複製 APA 引用</button>
+            </div>
+            <!-- 理論 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow relative">
+                <div class="text-4xl mb-4">⚖️</div>
+                <h3 class="font-bold text-lg mb-2">責任壓力計：SCCT 理論</h3>
+                <p class="text-gray-500 text-sm mb-4">評估責任歸屬：受害者型、意外型、可預防型。</p>
+                <button onclick="copyAPA('Coombs, W. T. (2007). Protecting organization reputations during a crisis. Corporate Reputation Review, 10(3), 163–176.')" class="text-xs text-blue-600 hover:underline">📄 複製 APA 引用</button>
+            </div>
+            <!-- 理論 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow relative">
+                <div class="text-4xl mb-4">🔪</div>
+                <h3 class="font-bold text-lg mb-2">修辭手術刀：形象修復理論</h3>
+                <p class="text-gray-500 text-sm mb-4">解剖聲明：修正行動、強化優點、致歉、規避責任。</p>
+                <button onclick="copyAPA('Benoit, W. L. (1995). Accounts, excuses, and apologies: A theory of image restoration strategies. State University of New York Press.')" class="text-xs text-blue-600 hover:underline">📄 複製 APA 引用</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 臨床病例區 -->
+    <main class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-8 flex items-center text-slate-800">📁 深度病例解剖</h2>
+        
+        <div class="mb-8 p-6 bg-white rounded-lg shadow-md border-l-4 border-blue-600">
+            <h3 class="text-xl font-bold mb-3 text-slate-800">病案 A：林聰明沙鍋魚頭 —— 修正行動典範</h3>
+            <p class="text-slate-600 mb-4">網友在 Threads 爆料大蟑螂影片。店家公告全分店停業兩天清消並公開詳盡報告書。</p>
+            <div class="bg-slate-50 p-4 rounded border border-slate-200">
+                <span class="font-semibold text-blue-700">🩺 診斷報告：</span>
+                <p class="text-sm mt-2 text-slate-700">【性質】意外型轉向可預防型承擔。<br>【策略】Benoit 之「修正行動」。透過全店停業高額成本，展現極高透明度。<br>【分析】「做」大於「說」，成功重建品牌紀律。</p>
+            </div>
+        </div>
+
+        <div class="mb-8 p-6 bg-white rounded-lg shadow-md border-l-4 border-red-600">
+            <h3 class="text-xl font-bold mb-3 text-slate-800">病案 B：台北老鼠危機 —— 數位與政治極化</h3>
+            <p class="text-slate-600 mb-4">網友製作「見鼠地圖」奪取議題設定權，演算法導致同溫層政治化攻防。</p>
+            <div class="bg-slate-50 p-4 rounded border border-slate-200">
+                <span class="font-semibold text-red-700">🩺 診斷報告：</span>
+                <p class="text-sm mt-2 text-slate-700">【議題設定】民間地圖優於官方數據。<br>【政治攻防】標籤化使數據澄清效果減弱。<br>【處方】應承認感官事實，引入中立第三方專家強化形象(Bolstering)。</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-20 py-8 border-t text-center text-slate-400 text-sm">
+        <p>© 2026 危機診斷室 - 堅持真實數據、學術嚴謹</p>
+    </footer>
+
+    <script>
+        function copyAPA(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert("APA 引用已複製！");
+            });
+        }
+    </script>
+</body>
+</html>
